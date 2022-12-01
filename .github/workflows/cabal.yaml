@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - workaround
 
   pull_request:
     branches:
