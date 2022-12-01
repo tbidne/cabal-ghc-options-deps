@@ -23,6 +23,8 @@ jobs:
           - 9.0.2
           - 9.2.4
           - 9.4.2
+        cabal:
+          - latest
     steps:
       - uses: actions/checkout@v3.0.2
 
@@ -31,4 +33,6 @@ jobs:
           ghc-version: ${{ matrix.ghc }}
       
       - name: Compile
-        run: cabal build all
+        run: |
+          cabal --version
+          cabal build all
