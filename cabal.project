@@ -1,3 +1,9 @@
 packages:
   ./lib1
   ./lib2
+
+package lib1
+  ghc-options: -Wprepositive-qualified-module -Werror
+
+package lib2
+  ghc-options: -Wprepositive-qualified-module -Werror
